@@ -1,0 +1,87 @@
+/* Define custom font 'gilroy' */
+@font-face {
+    font-family: gilroy;
+    src: url("./Gilroy-Medium.ttf");
+  }
+  
+  /* Global styling for all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy; /* Applying custom font */
+  }
+  
+  /* Set width and height to 100% for HTML and body */
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Styling for the body, flex layout centered with a blue background */
+  body {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for the profile card */
+  .card {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(237, 247, 251);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Styling for the profile image within the card */
+  .card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+  }
+  
+  /* Styling for the profile name within the card */
+  .card h1 {
+    font-size: 30px;
+  }
+  
+  /* Styling for the initial status within the card */
+  .card h5 {
+    font-size: 25px;
+    color: crimson; /* Red color for the initial status */
+  }
+  
+  /* Styling for the 'Add Friend' button within the card */
+  .buttons #btn {
+    border-radius: 50px;
+    border: none;
+    width: 125px;
+    height: 41px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Styling for the button container within the card */
+  .buttons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
